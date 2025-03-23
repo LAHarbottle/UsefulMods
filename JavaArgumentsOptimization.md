@@ -43,7 +43,7 @@ java -Xms10G -Xmx10G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMill
 
 ### More than 12G
 
-Aikar Notes if your using a Xmx value greater than 12G add/adjust the following flags. For bigger amount of memory these provide additional optimizations for GC
+Aikar Notes if you're using an Xmx value greater than 12G add/adjust the following flags. For bigger amounts of memory these provide additional optimizations for GC
 
 ```sh
 -XX:G1NewSizePercent=40
@@ -57,7 +57,7 @@ Aikar Notes if your using a Xmx value greater than 12G add/adjust the following 
 
 If you want to make your own custom flags that suit your PC and your needs, keep reading.
 
-We only cover the commonly changed options
+We only cover the commonly changed options.
 
 ### Memory
 
@@ -68,7 +68,7 @@ Append the letter k or K to indicate kilobytes, m or M to indicate megabytes, g 
 
 - #### Xms
 
-    Sets the minimum and the initial size of the heap. It is best to set Xms equal to Xmx (the maximum heap size) to minimize garbage collections.
+    Sets the minimum and the initial size of the heap. It's best to set Xms equal to Xmx (the maximum heap size) to minimize garbage collections.
 
     On Pterodactyl set Xms 1 to 1.5G less than Xmx
 
